@@ -1,0 +1,37 @@
+Manejo de Excepciones en JavaScript: Try...Catch
+Sintaxis:
+javascript
+try {
+  // Bloque de código que podría lanzar una excepción
+  // ...
+} catch (error) {
+  // Bloque de código que se ejecuta si se produce una excepción
+  // El parámetro "error" contiene información sobre la excepción
+  // ...
+} finally {
+  // Bloque de código opcional que siempre se ejecuta, independientemente de si hay una excepción o no
+  // ...
+}
+Ejemplo:
+javascript
+try {
+  // Código que podría generar una excepción
+  let resultado = 10 / 0; // Intentando dividir por cero
+  console.log(resultado); // Esta línea no se ejecutará si se lanza una excepción
+} catch (error) {
+  // Bloque que se ejecuta si se produce una excepción
+  console.error("Se ha producido un error: " + error.message);
+} finally {
+  // Bloque que siempre se ejecuta, independientemente de si hay una excepción o no
+  console.log("Este bloque siempre se ejecuta.");
+}
+Usos y Funcionamiento:
+Manejo de Excepciones:
+
+try: Contiene el código que se está probando en busca de excepciones. Si ocurre una excepción dentro del bloque try, la ejecución se detendrá en ese punto y se pasará al bloque catch.
+Bloque catch:
+
+catch (error): Este bloque se ejecuta solo si se produce una excepción en el bloque try. El parámetro error es una variable que contiene información sobre la excepción, como el mensaje de error.
+Bloque finally:
+
+finally: Este bloque es opcional y se ejecutará siempre, independientemente de si se lanzó o no una excepción. Se utiliza comúnmente para realizar acciones que deben ocurrir sin importar si hay errores o no, como cerrar recursos.

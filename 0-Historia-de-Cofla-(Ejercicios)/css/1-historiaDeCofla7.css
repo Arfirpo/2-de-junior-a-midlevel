@@ -1,0 +1,75 @@
+@import "../../src/reset.css";
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background: url(../../src/images/pizzarron.jpg) no-repeat center center/cover;
+}
+
+form {
+  background-color: black;
+  outline: none;
+  width: 375px;
+  height: 85%;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  & h1 {
+    text-align: center;
+    font-size: 26px;
+    color: #1adcec;
+    margin-bottom: 20px;
+  }
+  & button {
+    width: 60%;
+    height: 30px;
+    background-color: #16a2af;
+    color: #ffffff94;
+    font-weight: bold;
+    border-radius: 16px;
+    outline: none;
+    border: none;
+  }
+}
+
+.inputs-container {
+  width: 90%;
+  height: 50%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  & input {
+    outline: none;
+    width: 90%;
+    margin: 12px 5%;
+    padding: 10px 5px;
+    background-color: transparent;
+    border: none;
+    color: #1adcec;
+    border-top: 1px solid #1adcec;   
+  }
+  & input::placeholder {
+    color: #1adcec;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  & :hover{
+    background-color: #1adaecad;
+    transition: .3s;
+  }
+}
+
+.result{
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.green{
+  font-weight: bold;
+  padding-top: 15px;
+  color: #1adcec;
+}
+
+.red{
+  color: red;
+}
