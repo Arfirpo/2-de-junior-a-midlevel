@@ -1,0 +1,28 @@
+@import "../../src/reset.css";
+
+body {
+  color: #222;
+}
+
+.materias{
+  width: 90%;
+  background: #ccc;
+  padding: 2px;
+}
+
+.materia {
+  background: #efefef;
+  display: flex;
+  &>.nota{
+    flex-basis: 20px;
+    background: #dddd;
+  }
+  &>.nombre{
+    flex-grow: 1;
+  }
+}
+
+.materia div{
+  padding: 20px;
+}
+
